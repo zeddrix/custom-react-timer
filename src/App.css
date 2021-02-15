@@ -1,0 +1,130 @@
+* {
+	box-sizing: border-box;
+	user-select: none; /* Standard syntax */
+	-webkit-user-select: none; /* Chrome, Opera, Safari */
+	-moz-user-select: none; /* Firefox 2+ */
+	-ms-user-select: none; /* IE 10+ */
+
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.container {
+	font-size: 1rem;
+	text-align: center;
+	margin: 0;
+	overflow: hidden;
+	height: 100vh;
+	max-width: 420px;
+	margin: 0 auto;
+	background: white;
+	border: 5px solid black;
+	position: relative;
+	overflow: auto;
+}
+
+label {
+	font-size: 1.1rem;
+}
+
+.time-input {
+	width: 6rem;
+	text-align: center;
+	box-shadow: 3px 3px 3px;
+	outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.time-input::-webkit-outer-spin-button,
+.time-input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+.time-input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+.timer-label-input {
+	margin: 1rem;
+	margin-left: 0;
+	width: 15rem;
+	font-size: 1rem;
+}
+
+.time-input,
+.timer {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 5rem;
+}
+
+.timer-label {
+	text-align: left;
+	margin: 1.5rem 0 0 3rem;
+	font-size: 1.2rem;
+}
+
+.timer {
+	padding: 0 1rem;
+	margin: 0rem;
+	margin-top: -1rem;
+}
+
+.grid-inputs {
+	margin: 2rem;
+	margin-bottom: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.flex {
+	margin: 1rem;
+	margin-top: 0;
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.all-timers {
+	border: 2px solid black;
+	border-left: none;
+	border-right: none;
+	border-radius: 10px;
+}
+
+button {
+	margin-bottom: 0.5rem;
+}
+
+.side-buttons {
+	padding-right: 0;
+}
+
+.fa-trash-alt,
+.fa-pencil-alt {
+	cursor: pointer;
+	color: white;
+	background: black;
+	padding: 5px;
+	box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+	border-radius: 2px;
+	margin: 2px;
+}
+
+.fa-trash-alt:active,
+.fa-pencil-alt:active {
+	box-shadow: inset 0.5px 0.5px 0.5px 0.5px grey;
+}
